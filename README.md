@@ -10,3 +10,25 @@ Create an application that records employee salaries and adds salaries up to rep
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/github-finalization-assignment).
+
+- [X] create 'index.html'
+- [X] create 'client.js'
+- [X] create 'jQuery.js'
+- [X] create css
+- [X] source in javascript and css
+
+- create header
+    - add title
+- create table 
+    - add table inputs
+        - first name
+        - last name
+        - id
+        - title
+        - annual salary
+    - add button outside of table
+    - add inputs as table titles
+    - add spots for where employee user input info will go
+
+- create footer
+    - add total monthly salary

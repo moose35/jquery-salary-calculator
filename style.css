@@ -1,0 +1,29 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+  }
+  
+  td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  div {
+      text-align: center;
+  }
+
+  #header {
+      background-color: teal;
+      width: 75%;
+  }
+
+  #footer{
+      text-align: right;
+      width: 75%;
+  }
