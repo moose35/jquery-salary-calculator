@@ -14,13 +14,11 @@ table {
     background-color: #dddddd;
   }
 
-  div {
-      text-align: center;
-  }
-
-  #header {
+  #header{
       background-color: teal;
+      text-align: center;
       width: 75%;
+      
   }
 
   #footer{
