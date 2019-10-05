@@ -32,3 +32,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/gi
 
 - create footer
     - add total monthly salary
+
+- test submit button click with console logs
+- test delete button click with console logs
+
+- create function to add all available annual salaries and then divide by 12 for monthly total
+- clear input values after button click
+
+- get user input and add to table
