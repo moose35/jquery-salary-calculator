@@ -6,7 +6,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 90%;
-    margin-left: 40px;
+    margin: 0 auto;
     
   }
   
@@ -14,6 +14,7 @@ table {
     border: solid;
     text-align: left;
     padding: 8px;
+    margin: 0 auto;
   }
   
   tr:nth-child(even) {
@@ -27,17 +28,21 @@ table {
   }
 
   #footer{
-    text-align: right;
+    
+      margin-right: 7px;
+      font-size: 20px;
+      color: white;
       
   }
 
   .flex-container {
-    margin-left: 150px;
+    
     background-color: teal;
     display: flex;
     flex-direction: column;
     width: 75%;
     height: 500px;
+    margin: 0 auto;
     
   }
 
@@ -50,7 +55,7 @@ table {
   }
 
   h1 {
-    margin: 0px;
+    margin: 0 auto;
     text-align: center;
   }
   h2 {
@@ -59,8 +64,8 @@ table {
   }
 
   .deleteEmployee{
-    margin-left: 4px;
-    margin-right: 0px;
+    margin: 0 auto;
     width: 90px;
     height: 20px;
   }
+
