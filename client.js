@@ -1,10 +1,12 @@
 $(document).ready(onReady);
 
+let annualSalary = [];
+
 function onReady(){
     console.log('jQ working');
     $('#addInfo').on('click', getEmployeeInfo);
     $('#addInfo').on('click', inputClear);
-    $('')
+   // $('#addInfo').on('click', storeSalary);
 }
 
 function inputClear() {
@@ -27,3 +29,8 @@ function inputClear() {
        '</tr>');
      
   }
+
+  /*function storeSalary(){
+      $('#employeeSalary').add(annualSalary);
+      console.log('in storeSalary');
+  }*/
