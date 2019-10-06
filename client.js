@@ -6,9 +6,18 @@ function onReady() {
     console.log('jQ working');
     $('#addInfo').on('click', getEmployeeInfo);
     $('#addInfo').on('click', inputClear);
+    //$('#addInfo').on('click', calculateMonthly);
     $('tbody').on('click', '.deleteEmployee', handleDelete);
     // $('#addInfo').on('click', storeSalary);
 }
+
+$(document).on("change", "#employeeSalary", function() {
+    let sum = 0;
+    $("#employeeSalary").each(function(){
+        sum += +$(this).val();
+    });
+    $("#monthlyCost").append(sum / 12);
+});
 
 function inputClear() {
     $("#employeeFirstName").val("");
@@ -39,3 +48,4 @@ function handleDelete(){
     $('#employeeSalary').add(annualSalary);
     console.log('in storeSalary');
 }*/
+

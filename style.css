@@ -7,63 +7,57 @@ table {
     border-collapse: collapse;
     width: 90%;
     margin: 0 auto;
-    
   }
   
-  td, th {
+td, th {
     border: solid;
     text-align: left;
     padding: 8px;
     margin: 0 auto;
   }
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #dddddd;
   }
 
-  #header{
+#header{
     background-color: teal;
     text-align: center;
-      
   }
 
-  #footer{
-    
-      margin-right: 7px;
-      font-size: 20px;
-      color: white;
-      
+#footer{
+    margin-right: 7px;
+    font-size: 20px;
+    color: white;
   }
 
-  .flex-container {
-    
+.flex-container {
     background-color: teal;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 90%;
     height: 500px;
     margin: 0 auto;
-    
   }
 
-  #addInfo{
-   margin-left: 84%;
-   margin-top: 5px;
-   margin-bottom: 5px;
+#addInfo{
+    margin-left: 84%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 90px;
     height: 30px;
   }
 
-  h1 {
+h1 {
     margin: 0 auto;
     text-align: center;
   }
-  h2 {
-    margin-bottom: 0px;
-    
-  }
 
-  .deleteEmployee{
+h2 {
+    margin-bottom: 0px;
+    }
+
+.deleteEmployee{
     margin: 0 auto;
     width: 90px;
     height: 20px;
