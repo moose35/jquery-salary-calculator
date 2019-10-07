@@ -1,24 +1,28 @@
 $(document).ready(onReady);
 
 let annualSalary = [];
+let cost = 0;
 
 function onReady() {
     console.log('jQ working');
     $('#addInfo').on('click', getEmployeeInfo);
     $('#addInfo').on('click', inputClear);
     $('tbody').on('click', '.deleteEmployee', handleDelete);
-    $('#addInfo').on('click', maxBudget);
+    $('#monthlyCost').on('change', maxBudget);
 
 }
-$(document).on("change", '.employeeSalary', function () {
-    let sum = 0;
-    $('.employeeSalary').each(function () {
-        sum += +$(this).val();
-        console.log(sum);
-    });
 
-    $('#monthlyCost').text(sum / 12)
+$(document).on("change", '.employeeSalary', function () {
+        
+        //$('.employeeSalary').each(function () {
+            cost+= +$(this).closest('.employeeSalary').val();
+            console.log(cost);
+        
+    
+        $('#monthlyCost').text(cost/ 12)
 });
+    
+
 
 function inputClear() {
     $('#employeeFirstName').val("");
@@ -35,7 +39,7 @@ function getEmployeeInfo() {
         '<td>' + $('#employeeLastName').val() + '</td>' +
         '<td>' + $('#employeeID').val() + '</td>' +
         '<td>' + $('#employeeTitle').val() + '</td>' +
-        '<td>' + $('.employeeSalary').val() + '</td>' +
+        '<td class="forTotalCost">' + $('.employeeSalary').val() + '</td>' +
         '<td><button class="deleteEmployee">Delete</button></td>' +
         '</tr>');
 }
@@ -48,8 +52,9 @@ function handleDelete() {
 
 function maxBudget() {
     i = $('#monthlyCost');
-    if (i >= 20000) {
+    if (i > 1000) {
         $('#footer').css('background-color', 'red');
     }
     else console.log('Within spending limit');
 }
+
