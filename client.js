@@ -1,6 +1,6 @@
 $(document).ready(onReady);
 
-let annualSalary = [];
+
 let cost = 0;
 
 function onReady() {
