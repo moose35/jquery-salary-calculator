@@ -40,3 +40,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/gi
 - clear input values after button click
 
 - get user input and add to table
+
+Additional resources included:
+https://stackoverflow.com
+https://codepedia.info
+https://www.w3schools.com
+https://api.jquery.com
+https://forum.jquery.com
