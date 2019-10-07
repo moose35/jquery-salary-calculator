@@ -1,27 +1,30 @@
 $(document).ready(onReady);
 
 let annualSalary = [];
-let cost = 0;
+let cost = 0;
 
 function onReady() {
     console.log('jQ working');
     $('#addInfo').on('click', getEmployeeInfo);
     $('#addInfo').on('click', inputClear);
     $('tbody').on('click', '.deleteEmployee', handleDelete);
-    $('#monthlyCost').on('change', maxBudget);
 
 }
 
-$(document).on("change", '.employeeSalary', function () {
-        
-        //$('.employeeSalary').each(function () {
-            cost+= +$(this).closest('.employeeSalary').val();
-            console.log(cost);
-        
-    
-        $('#monthlyCost').text(cost/ 12)
+$(document).on('change', '.employeeSalary', function () {
+
+    //$('.employeeSalary').each(function () {
+    cost += +$(this).closest('.employeeSalary').val();
+    console.log(cost);
+    $('#monthlyCost').text(cost / 12);
+
+    i = $('#monthlyCost');
+    if (cost / 12 >= 20000) {
+        $('#footer').css('background-color', 'red');
+    }
+    else console.log('Within spending limit');
 });
-    
+
 
 
 function inputClear() {
@@ -48,13 +51,4 @@ function handleDelete() {
     $('.deleteEmployee').on('click',
         console.log('Delete clicked'));
     $(this).closest('tr').remove();
-}
-
-function maxBudget() {
-    i = $('#monthlyCost');
-    if (i > 1000) {
-        $('#footer').css('background-color', 'red');
-    }
-    else console.log('Within spending limit');
-}
-
+};
